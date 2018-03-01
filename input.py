@@ -1,18 +1,21 @@
 import os
 os.chdir("C:/Users/Stéphan Christian/Desktop")
 
-data = []
-with open("a_example.in", "r") as données_sujet:
-        i = 0
-        for line in données_sujet:
-            row = []
-            for lettre in line:
-                row.append(lettre)
-            n = len(row)
-            del (row[n-1])
-            data.append(row)
-            i += 1
-x=0
-while x < i:
-    print(data[x])
-    x += 1
+with open("a_example.in", "r") as data:
+    for line in range(1):
+        int_number = data.readline()
+        list_int_nbr = int_number.split()
+
+        R = int(list_int_nbr[0])
+        C = int(list_int_nbr[1])
+        F = int(list_int_nbr[2])
+        N = int(list_int_nbr[3])
+        B = int(list_int_nbr[4])
+        T = int(list_int_nbr[5])
+
+    data_set = []
+    données = data.readlines()
+    for line in données:
+        entier = line.split()
+        data_set.append(entier)
+    print (data_set)
